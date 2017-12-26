@@ -400,8 +400,8 @@ server min protocol = SMB2
     directory mask = 0755
     force create mode = 0644
     force directory mode = 0755
-    force user = root
-    force group = root
+    force user = pi
+    force group = pi
 
 [media]
     comment = /media folder of pxe-server
@@ -415,8 +415,8 @@ server min protocol = SMB2
     directory mask = 0755
     force create mode = 0644
     force directory mode = 0755
-    force user = root
-    force group = root
+    force user = pi
+    force group = pi
 EOF"
     sudo systemctl restart smbd.service;
     )
@@ -527,8 +527,6 @@ LABEL Ubuntu LTS x86
     ENDTEXT
 EOF";
     fi
-
-
     if [ -f "$FILE_MENU" ] \
     && [ -f "$DST_NFS_ETH0/$UBUNTU_X64/casper/vmlinuz.efi" ]; then
         echo  -e "\e[36m    add $UBUNTU_X64\e[0m";
