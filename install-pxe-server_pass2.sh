@@ -528,6 +528,7 @@ LABEL Ubuntu LTS x86
 EOF";
     fi
 
+
     if [ -f "$FILE_MENU" ] \
     && [ -f "$DST_NFS_ETH0/$UBUNTU_X64/casper/vmlinuz.efi" ]; then
         echo  -e "\e[36m    add $UBUNTU_X64\e[0m";
