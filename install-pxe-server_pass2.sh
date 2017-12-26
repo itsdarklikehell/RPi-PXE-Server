@@ -20,14 +20,13 @@
 # piCore,        http://tinycorelinux.net/9.x/armv6/releases/RPi/
 #               http://tinycorelinux.net/9.x/armv7/releases/RPi/
 # clonezilla,    http://clonezilla.org/
-##### testing starts here #####
 #
 # parrot os full,	https://cdimage.parrotsec.org/parrot/iso/3.10.1/
 #					Parrot-security-3.10.1_amd64.iso
 #					Parrot-security-3.10.1_i386.iso
 # 					Parrot-home-3.10.1_amd64.iso
 #					Parrot-home-3.10.1_i386.iso
-##### testing ends here #####
+#
 #
 # v2017-12-26
 #
@@ -129,7 +128,7 @@ UBUNTU_X64=ubuntu-x64
 UBUNTU_X64_URL=http://releases.ubuntu.com/17.10/ubuntu-17.10-desktop-amd64.iso
 
 UBUNTU_X86=ubuntu-x86
-UBUNTU_X86_URL=http://releases.ubuntu.com/17.04/ubuntu-17.04-desktop-i386.iso
+UBUNTU_X86_URL=http://releases.ubuntu.com/17.10/ubuntu-17.10-desktop-i386.iso
 
 UBUNTU_NONPAE=ubuntu-nopae
 UBUNTU_NONPAE_URL=
@@ -137,6 +136,7 @@ UBUNTU_NONPAE_URL=
 DEBIAN_X64=debian-x64
 DEBIAN_X64_URL=http://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-9.3.0-amd64-lxde.iso
 DEBIAN_KVER=4.9.0-4
+
 DEBIAN_X86=debian-x86
 DEBIAN_X86_URL=http://cdimage.debian.org/debian-cd/current-live/i386/iso-hybrid/debian-live-9.3.0-i386-lxde.iso
 
@@ -149,6 +149,15 @@ DEFT_X64_URL=http://na.mirror.garr.it/mirrors/deft/deft-8.2.iso
 KALI_X64=kali-x64
 KALI_X64_URL=http://cdimage.kali.org/kali-2017.3/kali-linux-2017.3-amd64.iso
 
+KALI_X86=kali-x86
+KALI_X86_URL=http://cdimage.kali.org/kali-2017.3/kali-linux-2017.3-i386.iso
+
+KALI_LITE_X64=kali-lite-x64
+KALI_X64_URL=http://cdimage.kali.org/kali-2017.3/kali-linux-light-2017.3-amd64.iso
+
+KALI_LITE_X86=kali-lite-x86
+KALI_LITE_X86_URL=http://cdimage.kali.org/kali-2017.3/kali-linux-light-2017.3-i386.iso
+
 PENTOO_X64=pentoo-x64
 PENTOO_X64_URL=http://mirror.switch.ch/ftp/mirror/pentoo/Pentoo_amd64_default/pentoo-amd64-default-2015.0_RC5.iso
 
@@ -159,10 +168,10 @@ DESINFECT_X86=desinfect-x86
 DESINFECT_X86_URL=
 
 TINYCORE_x64=tinycore-x64
-TINYCORE_x64_URL=http://tinycorelinux.net/8.x/x86_64/release/TinyCorePure64-8.2.1.iso
+TINYCORE_x64_URL=http://tinycorelinux.net/8.x/x86_64/release/TinyCorePure64-current.iso
 
 TINYCORE_x86=tinycore-x86
-TINYCORE_x86_URL=http://tinycorelinux.net/8.x/x86/release/TinyCore-8.2.1.iso
+TINYCORE_x86_URL=http://tinycorelinux.net/8.x/x86/release/TinyCore-current.iso
 
 RPDESKTOP_X86=rpdesktop-x86
 RPDESKTOP_X86_URL=https://downloads.raspberrypi.org/rpd_x86/images/rpd_x86-2017-12-01/2017-11-16-rpd-x86-stretch.iso
@@ -178,6 +187,21 @@ FEDORA_X64_URL=https://download.fedoraproject.org/pub/fedora/linux/releases/26/W
 
 TAILS_X64=tails-x64
 TAILS_X64_URL=https://mirrors.kernel.org/tails/stable/tails-amd64-3.3/tails-amd64-3.3.iso
+
+##### testing starts here #####
+PARROT_X86=parrot-x86
+PARROT_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_i386.iso
+
+PARROT_X64=parrot-x64
+PARROT_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_amd64.iso
+
+PARROT_HOME_X86=parrot-home-x86
+PARROT_HOME_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_i386.iso
+
+PARROT_HOME_X64=parrot-home-x64
+PARROT_HOME_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_amd64.iso
+
+##### testing ends here #####
 
 ######################################################################
 ######################################################################
@@ -196,22 +220,10 @@ RPD_LITE_URL=https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lit
 
 RPD_FULL=rpi-raspbian-full
 RPD_FULL_URL=https://downloads.raspberrypi.org/raspbian/images/raspbian-2017-12-01/2017-11-29-raspbian-stretch.zip
-
 ##### testing starts here #####
-PARROT_X86=parrot-x86
-PARROT_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_i386.iso
-
-PARROT_X64=parrot-x64
-PARROT_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_amd64.iso
-
-PARROT_HOME_X86=parrot-home-x86
-PARROT_HOME_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_i386.iso
-
-PARROT_HOME_X64=parrot-home-x64
-PARROT_HOME_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_amd64.iso
-
+PARROT_RPI=rpi-raspbian-full
+PARROT_RPI_URL=https://cdimage.parrotsec.org/parrot/iso/arm/rpi/Parrot-rpi-2017.11.15_armhf.img.tar.xz
 ##### testing ends here #####
-
 
 ######################################################################
 handle_dhcpcd() {
@@ -790,10 +802,7 @@ LABEL Tails x64
     ENDTEXT
 EOF";
     fi
-
 ##### testing starts here #####
-
-
 if [ -f "$FILE_MENU" ] \
     && [ -f "$DST_NFS_ETH0/$PARROT_X64/casper/vmlinuz.efi" ]; then
         echo  -e "\e[36m    add $PARROT_X64\e[0m";
@@ -852,11 +861,6 @@ LABEL Parrot home x86
     ENDTEXT
 EOF";
     fi
-
-
-
-
-
 ##### testing ends here #####
 
 }
