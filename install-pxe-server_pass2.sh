@@ -20,12 +20,15 @@
 # piCore,        http://tinycorelinux.net/9.x/armv6/releases/RPi/
 #               http://tinycorelinux.net/9.x/armv7/releases/RPi/
 # clonezilla,    http://clonezilla.org/
+##### testing starts here #####
 #
 # parrot os full,	https://cdimage.parrotsec.org/parrot/iso/3.10.1/
 #					Parrot-security-3.10.1_amd64.iso
 #					Parrot-security-3.10.1_i386.iso
 # 					Parrot-home-3.10.1_amd64.iso
 #					Parrot-home-3.10.1_i386.iso
+##### testing ends here #####
+#
 # v2017-12-26
 #
 # known issues:
@@ -195,6 +198,17 @@ RPD_FULL=rpi-raspbian-full
 RPD_FULL_URL=https://downloads.raspberrypi.org/raspbian/images/raspbian-2017-12-01/2017-11-29-raspbian-stretch.zip
 
 ##### testing starts here #####
+PARROT_X86=parrot-x86
+PARROT_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_i386.iso
+
+PARROT_X64=parrot-x64
+PARROT_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-security-3.10.1_amd64.iso
+
+PARROT_HOME_X86=parrot-home-x86
+PARROT_HOME_X86_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_i386.iso
+
+PARROT_HOME_X64=parrot-home-x64
+PARROT_HOME_X64_URL=https://cdimage.parrotsec.org/parrot/iso/3.10.1/Parrot-home-3.10.1_amd64.iso
 
 ##### testing ends here #####
 
