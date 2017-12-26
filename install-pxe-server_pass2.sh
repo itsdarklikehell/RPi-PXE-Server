@@ -130,6 +130,12 @@ UBUNTU_X64_URL=http://releases.ubuntu.com/17.10/ubuntu-17.10-desktop-amd64.iso
 UBUNTU_X86=ubuntu-x86
 UBUNTU_X86_URL=http://releases.ubuntu.com/17.10/ubuntu-17.10-desktop-i386.iso
 
+UBUNTU_MINIMAL_X64=ubuntu-minimal-x86
+UBUNTU_MINIMAL_X64_URL=http://archive.ubuntu.com/ubuntu/dists/artful/main/installer-amd64/current/images/netboot/mini.iso
+
+UBUNTU_MINIMAL_X86=ubuntu-minimal-x86
+UBUNTU_MINIMAL_X86_URL=http://archive.ubuntu.com/ubuntu/dists/artful/main/installer-i386/current/images/netboot/mini.iso
+
 UBUNTU_NONPAE=ubuntu-nopae
 UBUNTU_NONPAE_URL=
 
@@ -527,6 +533,7 @@ LABEL Ubuntu LTS x86
     ENDTEXT
 EOF";
     fi
+    
     if [ -f "$FILE_MENU" ] \
     && [ -f "$DST_NFS_ETH0/$UBUNTU_X64/casper/vmlinuz.efi" ]; then
         echo  -e "\e[36m    add $UBUNTU_X64\e[0m";
@@ -857,6 +864,36 @@ LABEL Parrot home x86
     TEXT HELP
         Boot to Parrot home x86 Live
         User: parrot
+    ENDTEXT
+EOF";
+    fi
+    #####################
+    if [ -f "$FILE_MENU" ] \
+    && [ -f "$DST_NFS_ETH0/$UBUNTU_MINIMAL_X64/casper/vmlinuz.efi" ]; then
+        echo  -e "\e[36m    add $UBUNTU_MINIMAL_X64\e[0m";
+        sudo sh -c "cat << EOF  >> $FILE_MENU
+########################################
+LABEL Ubuntu Minimal x64
+    KERNEL $NFS_ETH0/$UBUNTU_MINIMAL_X64/casper/vmlinuz.efi
+    APPEND initrd=$NFS_ETH0/$UBUNTU_MINIMAL_X64/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_MINIMAL_X64 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=nl console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
+    TEXT HELP
+        Boot to Ubuntu x64 Minimal Netinstaller
+        User: ubuntu
+    ENDTEXT
+EOF";
+    fi
+
+    if [ -f "$FILE_MENU" ] \
+    && [ -f "$DST_NFS_ETH0/$UBUNTU_MINIMAL_X86/casper/vmlinuz" ]; then
+        echo  -e "\e[36m    add $UBUNTU_MINIMAL_X86\e[0m";
+        sudo sh -c "cat << EOF  >> $FILE_MENU
+########################################
+LABEL Ubuntu Minimal x86
+    KERNEL $NFS_ETH0/$UBUNTU_MINIMAL_X86/casper/vmlinuz
+    APPEND initrd=$NFS_ETH0/$UBUNTU_MINIMAL_X86/casper/initrd.lz netboot=nfs nfsroot=$IP_ETH0:$DST_NFS_ETH0/$UBUNTU_MINIMAL_X86 ro file=/cdrom/preseed/ubuntu.seed boot=casper -- debian-installer/language=nl console-setup/layoutcode=en keyboard-configuration/layoutcode=en keyboard-configuration/variant=German
+    TEXT HELP
+        Boot to Ubuntu x86 Minimal Netinstaller
+        User: ubuntu
     ENDTEXT
 EOF";
     fi
@@ -1406,6 +1443,8 @@ handle_dhcpcd
 # handle_iso  $UBUNTU_LTS_X86    $UBUNTU_LTS_X86_URL;
 #handle_iso  $UBUNTU_X64        $UBUNTU_X64_URL;
 # handle_iso  $UBUNTU_X86        $UBUNTU_X86_URL;
+handle_iso  $UBUNTU_MINIMAL_X64        $UBUNTU_MINIMAL_X64_URL;
+handle_iso  $UBUNTU_MINIMAL_X86        $UBUNTU_MINIMAL_X86_URL;
 ## handle_iso  $UBUNTU_NONPAE     $UBUNTU_NONPAE_URL;
 #handle_iso  $DEBIAN_X64        $DEBIAN_X64_URL;
 # handle_iso  $DEBIAN_X86        $DEBIAN_X86_URL;
