@@ -1263,7 +1263,7 @@ wpa_passphrase <SSID> <PASSWORD>
 sudo iwlist wlan0 scan  [essid <SSID>]
 sudo raspi-config
 EOF";
-                sudo chown 1000:1000 $DST_ROOT/home/pi/.bash_history;
+                sudo chown pi:pi $DST_ROOT/home/pi/.bash_history;
             fi
         fi
 
