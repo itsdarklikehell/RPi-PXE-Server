@@ -1442,7 +1442,7 @@ handle_dhcpcd
 # handle_iso  $UBUNTU_LTS_X64    $UBUNTU_LTS_X64_URL;
 # handle_iso  $UBUNTU_LTS_X86    $UBUNTU_LTS_X86_URL;
 handle_iso  $UBUNTU_X64        $UBUNTU_X64_URL;
-handle_iso  $UBUNTU_X86        $UBUNTU_X86_URL;
+#handle_iso  $UBUNTU_X86        $UBUNTU_X86_URL;
 #handle_iso  $UBUNTU_MINIMAL_X64        $UBUNTU_MINIMAL_X64_URL;
 #handle_iso  $UBUNTU_MINIMAL_X86        $UBUNTU_MINIMAL_X86_URL;
 ## handle_iso  $UBUNTU_NONPAE     $UBUNTU_NONPAE_URL;
@@ -1480,9 +1480,9 @@ handle_pxe
 ##  you dont want to download/mount/export
 ######################################################################
 ######################################################################
-#handle_zip_img  $PI_CORE   $PI_CORE_URL;
+handle_zip_img  $PI_CORE   $PI_CORE_URL;
 handle_zip_img  $RPD_LITE  $RPD_LITE_URL;
-#handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
+handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
 ######################################################################
 ######################################################################
 ## comment out those entries,
