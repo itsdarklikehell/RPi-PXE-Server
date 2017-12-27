@@ -1480,9 +1480,9 @@ handle_pxe
 ##  you dont want to download/mount/export
 ######################################################################
 ######################################################################
-handle_zip_img  $PI_CORE   $PI_CORE_URL;
-handle_zip_img  $RPD_LITE  $RPD_LITE_URL;
-handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
+#handle_zip_img  $PI_CORE   $PI_CORE_URL;
+#handle_zip_img  $RPD_LITE  $RPD_LITE_URL;
+#handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
 ######################################################################
 ######################################################################
 ## comment out those entries,
@@ -1490,7 +1490,7 @@ handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
 ######################################################################
 ######################################################################
 #handle_network_booting  $PI_CORE  bootcode,config
-handle_network_booting  $RPD_LITE  bootcode,cmdline,config,ssh,root,fstab,wpa,history
+#handle_network_booting  $RPD_LITE  bootcode,cmdline,config,ssh,root,fstab,wpa,history
 #handle_network_booting  $RPD_FULL  bootcode,cmdline,config,ssh,root,fstab,wpa,history
 
 
