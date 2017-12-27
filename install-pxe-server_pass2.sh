@@ -48,7 +48,7 @@ echo -e "\e[36msetup variables\e[0m";
 ##  and other variables...
 ######################################################################
 ######################################################################
-RPI_SN0=12345678
+RPI_SN0=000000008f0a9fcd
 RPI_SN0_BOOT=rpi-$RPI_SN0-boot
 RPI_SN0_ROOT=rpi-$RPI_SN0-root
 ######################################################################
@@ -72,7 +72,7 @@ ISO=/iso
 IMG=/img
 TFTP_ETH0=/tftp
 NFS_ETH0=/nfs
-SRC_MOUNT=/media/server
+SRC_MOUNT=/home/pi/RetroPie/Osses
 SRC_BACKUP=$SRC_MOUNT/backup
 SRC_ISO=$SRC_BACKUP$ISO
 SRC_IMG=$SRC_BACKUP$IMG
