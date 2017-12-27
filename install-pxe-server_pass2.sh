@@ -1441,10 +1441,10 @@ handle_dhcpcd
 ## handle_iso  $WIN_PE_X86        $WIN_PE_X86_URL;
 # handle_iso  $UBUNTU_LTS_X64    $UBUNTU_LTS_X64_URL;
 # handle_iso  $UBUNTU_LTS_X86    $UBUNTU_LTS_X86_URL;
-#handle_iso  $UBUNTU_X64        $UBUNTU_X64_URL;
-# handle_iso  $UBUNTU_X86        $UBUNTU_X86_URL;
-handle_iso  $UBUNTU_MINIMAL_X64        $UBUNTU_MINIMAL_X64_URL;
-handle_iso  $UBUNTU_MINIMAL_X86        $UBUNTU_MINIMAL_X86_URL;
+handle_iso  $UBUNTU_X64        $UBUNTU_X64_URL;
+handle_iso  $UBUNTU_X86        $UBUNTU_X86_URL;
+#handle_iso  $UBUNTU_MINIMAL_X64        $UBUNTU_MINIMAL_X64_URL;
+#handle_iso  $UBUNTU_MINIMAL_X86        $UBUNTU_MINIMAL_X86_URL;
 ## handle_iso  $UBUNTU_NONPAE     $UBUNTU_NONPAE_URL;
 #handle_iso  $DEBIAN_X64        $DEBIAN_X64_URL;
 # handle_iso  $DEBIAN_X86        $DEBIAN_X86_URL;
