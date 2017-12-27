@@ -1463,10 +1463,10 @@ handle_iso  $UBUNTU_MINIMAL_X86        $UBUNTU_MINIMAL_X86_URL;
 ## handle_iso  $TAILS_X64          $TAILS_X64_URL;
 #
 ##### testing starts here #####
-handle_iso  $PARROT_X64          $PARROT_X64_URL;
-handle_iso  $PARROT_X86          $PARROT_X86_URL;
-handle_iso  $PARROT_HOME_X64          $PARROT_HOME_X64_URL;
-handle_iso  $PARROT_HOME_X86          $PARROT_HOME_X86_URL;
+#handle_iso  $PARROT_X64          $PARROT_X64_URL;
+#handle_iso  $PARROT_X86          $PARROT_X86_URL;
+#handle_iso  $PARROT_HOME_X64          $PARROT_HOME_X64_URL;
+#handle_iso  $PARROT_HOME_X86          $PARROT_HOME_X86_URL;
 
 ##### testing ends here #####
 
@@ -1481,7 +1481,7 @@ handle_pxe
 ######################################################################
 ######################################################################
 #handle_zip_img  $PI_CORE   $PI_CORE_URL;
-#handle_zip_img  $RPD_LITE  $RPD_LITE_URL;
+handle_zip_img  $RPD_LITE  $RPD_LITE_URL;
 #handle_zip_img  $RPD_FULL  $RPD_FULL_URL;
 ######################################################################
 ######################################################################
@@ -1490,7 +1490,7 @@ handle_pxe
 ######################################################################
 ######################################################################
 #handle_network_booting  $PI_CORE  bootcode,config
-#handle_network_booting  $RPD_LITE  bootcode,cmdline,config,ssh,root,fstab,wpa,history
+handle_network_booting  $RPD_LITE  bootcode,cmdline,config,ssh,root,fstab,wpa,history
 #handle_network_booting  $RPD_FULL  bootcode,cmdline,config,ssh,root,fstab,wpa,history
 
 
