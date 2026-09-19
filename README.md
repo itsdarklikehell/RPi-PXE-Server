@@ -9,6 +9,13 @@ i did not keep an eye on network security.
 
 **USE IT AT YOUR OWN RISK.**
 
+---
+
+## Development Visualization
+
+<video src="https://github.com/itsdarklikehell/RPi-PXE-Server/assets/example.com/123456/gource.mp4" controls width="100%"></video>
+
+*Gource visualization showing the repository's commit history. See the [Gource workflow](.github/workflows/gource.yml) for details.*
 ## what is it good for?
 the scripts installs necessary packages to let your RPi act as a DHCP, TFTP, Samba, NFS, HTML, NTP, VBLADE, PXE server.
 and it will download LiveDVD ISOs you can boot your PXE client (Desktop PC) to.
