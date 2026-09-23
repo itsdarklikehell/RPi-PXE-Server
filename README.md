@@ -13,7 +13,7 @@ i did not keep an eye on network security.
 
 ## Development Visualization
 
-<video src="https://github.com/itsdarklikehell/RPi-PXE-Server/assets/example.com/123456/gource.mp4" controls width="100%"></video>
+<video src="https://github.com/itsdarklikehell/RPi-PXE-Server/raw/master/gource.mp4" controls width="100%"></video>
 
 *Gource visualization showing the repository's commit history. See the [Gource workflow](.github/workflows/gource.yml) for details.*
 ## what is it good for?
